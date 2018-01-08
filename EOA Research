@@ -1,0 +1,64 @@
+	How does the analytic portion of email on acid work? Are they using a tag in the email to feed the data back into their system or would we need to connect Email on Acid with SF?
+When using Analytics tracking, Email on Acid(EOA) provide you with a passive pixel tracking code which contains a 1x1 transparent pixel. The passive pixel will record information once images are activated on an email, and report back to your Campaign Summary associated with the pixel in your account. 
+
+With the use of Merge Tags, you can also acquire more in-depth information on your subscriber opens interaction through a downloadable Subscriber Level Campaign Report. This will give you insights into your subscribers activity at a more detailed level than standard tracking, and will rely upon the Merge Tag in use for the sending service(SF).
+
+It is not required to have SF connected with their Analytics tracking; in fact, it's meant to be used as a standalone tracking option! Simply add the tracking code to the bottom of your email source code prior to the final closing body tag, and you'll be ready to go once the email is launched and your tracking campaign is activated.
+
+	Benefits of using Email on Acid vs. Litmus? Pricing difference?
+EOA do offer a better value with their packages versus Litmus. For just $85/month (or $816/year), you get access to all of their features with the "All Access" subscription package. This includes Analytics for 250,000 opens. The most similar package with Litmus is their 'Plus' subscription, a cost of a whopping $149/month or $1,428/year (In fact, if you only need a single user and don't want to include Analytics, EOA provide an even smaller package that is Basics, which gives you access to full email testing portion of the tool. You can view a complete list of the differences in the service plans here: https://www.emailonacid.com/pricing).
+
+Previews per subscription level
+The newest difference will be found in Litmus's newly introduced limits on previews per subscription level. All of EOA subscriptions are going to include unlimited Email and Spam Testing, whereas with Litmus, you'll find yourself limited to 1000, 2000, or 5000 previews per month. Additionally, each screenshot for each client in each test is then counted as a 'preview.' These limitations are not currently imposed with EOA services, so you'll find more freedom in choosing the best plan without having to worry about how many Tests are run each month.
+
+How do they Test?
+One of the largest differentiators is how they test. In EOA screenshots are taken on real clients and devices, whereas Litmus uses emulation software to preview how the email will look. Within EOA screenshots, they give you a larger view (up to 7000 pixels versus 2000) of your email so you can see the full display. If you are having issues, they don't just stop at showing you what the problems will be. Their tips and tricks and Code Analysis can help you solve issues specific to each email client while viewing your screenshot. EOA provides both horizontal and vertical views for mobile devices along with drag and throw functionality.  With mobile on the rise, it's the primary objective to assist in responsive email design. Litmus is that there is no horizontal scrolling on previews, meaning you can only see the left side of any emails that are too wide for the device viewport you are testing/previewing on. Litmus also takes a bit longer to render previews.
+When working with a team, EOA allow you to not only share your test results, but you and anyone you share with can mark-up screenshots and leave comments for easy collaboration.
+
+Better value
+With Analytics, they are going to give you a better value again. EOA offer features such as click tracking and our unique heat mapping tool which you can't find with Litmus. You can also compare up to 5 different campaigns to see how you are improving over time. Not to mention, you'll pay less per open with any of EOA’s packages. If you're not finding a package that fits your needs, don't worry. They have add-ons that allow you to customize the amount of opens you need to track, something that you'll need to upgrade plans entirely to achieve with Litmus.
+
+Code quality benefits
+A built-in inliner tool shipped - The embedded CSS become inline styles by a click
+An very easy to understand code quality checker warning about problems with the code and also an Optimizer tool, which will correct them instantly
+The ability convert your special characters to HTML code in an instant.
+
+EOA also offer unique tools such as Mozify and Design Inspiration. To make your life easier, they have an awesome customer support team to help, even if you're working late to hit a deadline.
+
+	Can you explore the option mentioned above that M&R is using?
+M&R are using Return Path and below are some of the features of it
+•	Return Path provides 70+ previews with different email clients, mobile devices and web browsers. 
+•	Interestingly, Litmus and Return path share the same platform for the inbox preview.
+Exclusive features offered by Return Path 
+•	 Return Path provides the exact number of emails that reached to inbox and spam.
+•	They keep track of each campaign performance.
+•	They take care of Sender score(sending reputation), it means value to the IP address – which depends upon number of unknown users in the sending list, message filters, blocked messages and more. Sender score is the primary factor for the emails to be delivered in the spam folder.
+•	The most highlighted feature of this tool is their platform is fully integrated into the Salesforce Marketing cloud.
+•	For analytics tracking, though they are completely integrated with Salesforce marketing cloud they also offer two additional methods. They use seed list method (the data is implemented in sending list) or passive pixel tracking code which contains a 1x1 transparent pixel.
+•	For same number of opens - 250,000(Email volumes) the price of return path is $2750/year, whereas for the EOA it is $816/year. However they offer some exclusive features, they are way expensive than EOA. 
+Please find the attached pdf for more details on Return Path.
+
+	Does SF have basic rendering functionality already built into Marketing Cloud?
+SF renders a screenshot of the existing mail that was sent from Marketing Cloud into the “Individual Email Send” in the details section of the page.
+ 
+ 
+
+	To Confirm within Email on Acid you can look at the rendering of the email on various web browsers without actually having the web browser enabled on your computer?
+By logging into the Email on acid and navigating to the inbox, Emails are visually rendered on all the browsers without enabling the web browser on our computer. Below is the screenshot, how it looks when using EOA’s inbox for visual rendering of the emails.
+
+ 
+
+	If we were to use the Email on Acid HTML Builder how would we feed this finalized code back into SF?
+If the Email on Acid HTML builder is used, we need to take the code it generates and bring it back into Marketing Cloud to replace the existing email HTML code prior to sending.
+
+Adding,  outstanding question from the demo. 
+How EOA filters will handle the email deliverability in the Gmail (whether delivered in Primary, Social or Promotions tab)?
+Spam tests, including Gmail, will let you know if your email has passed or failed that particular filter. When your email has passed, this means the delivery to the primary inbox was successful. However, if the email fails the spam filter system will not indicate if it has been sent to Spam, Junk, or any other tab. EOA only report that the email was not successfully delivered to the inbox. 
+
+When reviewing the spam test details, need to take a look at the Spam Assassin scores. Spam Assassin will usually provide the most details regarding why your email has failed the filter, which can be very useful for troubleshooting deliverability issues with Gmail and other filters that don't provide very much feedback.
+
+Thanks and regards,
+Sushanth
+
+ 
+
